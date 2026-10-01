@@ -1,0 +1,9 @@
+node_modules
+dist
+*.zip
+*.log
+.DS_Store
+public/models/villa.raw.glb
+scripts/.plan-data.json
+*.tsbuildinfo
+reference/rear-original.jpg

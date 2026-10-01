@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Villa Palm — explore every floor, room, terrace and pool of a contemporary two-storey villa in interactive 3D." />
+    <title>VILLA PALM — Interactive 3D villa</title>
+  </head>
+  <body>
+    <!-- instant splash (pure HTML/CSS) so the page is never blank while the JS bundle loads; removed by <LoadingScreen/> -->
+    <div id="splash" style="position:fixed;inset:0;z-index:299;background:#0f0f0f;display:grid;place-content:center;justify-items:center;gap:26px;font:300 15px/1 system-ui,sans-serif;letter-spacing:.4em;color:#eaeaea">
+      <div>VILLA <b style="font-weight:500;color:#c8a06a">PALM</b></div>
+      <div style="width:min(280px,64vw);height:1px;background:rgba(255,255,255,.14);overflow:hidden"><div style="width:35%;height:100%;background:#c8a06a;animation:splash 1.3s ease-in-out infinite"></div></div>
+    </div>
+    <style>@keyframes splash{0%{transform:translateX(-100%)}100%{transform:translateX(300%)}}</style>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
